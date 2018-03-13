@@ -1,6 +1,7 @@
 // import dbConfig from './src/config/db';
 // import {TodoRoutes } from './src/modules';
 import express from 'express';
+import path from 'path'
 import middlewaresConfig from './src/config/middlewares';
 const app=express();
 const PORT=process.env.PORT || 5000
