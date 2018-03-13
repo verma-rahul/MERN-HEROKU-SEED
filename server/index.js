@@ -1,7 +1,10 @@
-const express = require('express');
-const path = require('path');
-const PORT = process.env.PORT || 5000;
-const app = express();
+// import dbConfig from './src/config/db';
+// import {TodoRoutes } from './src/modules';
+// import middlewaresConfig from './src/config/middlewares';
+import express from 'express';
+import path from 'path'
+const app=express();
+const PORT=process.env.PORT || 5000
 
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
@@ -16,6 +19,9 @@ app.get('*', function(request, response) {
 response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
 });
 
-  app.listen(PORT, function () {
-    console.error(`Node cluster worker ${process.pid}: listening on port ${PORT}`);
-  });
+// listening at Port
+app.listen(PORT,err =>{
+    console.log("ERROR")
+},res => {
+    console.log(`RUNNING at ${PORT}`)
+});
