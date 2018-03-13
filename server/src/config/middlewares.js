@@ -6,5 +6,5 @@ export default app => {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
   // Priority serve any static files.
-  app.use(express.static(path.resolve(__dirname, '../../react-ui/build')));
+  app.use(app.static(path.resolve(__dirname, '../../react-ui/build')));
 };
