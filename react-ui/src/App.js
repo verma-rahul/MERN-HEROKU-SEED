@@ -1,4 +1,10 @@
+/**
+ * @version 0.0.1
+ * @author [Rahul Verma](https://github.com/Verma92)
+ */
+// Importing React's Components and React's and Node Libraries
 import React, { Component } from 'react';
+
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-  fetchMessage()
+  this.fetchMessage()
   }
 
   fetchMessage()
