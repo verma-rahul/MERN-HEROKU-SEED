@@ -3,10 +3,10 @@
  * @author [Rahul Verma](https://github.com/Verma92)
  */
 // Importing React's Components and React's and Node Libraries
+import { render } from 'react-dom';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import App from './Components/App';
 
-const root=document.getElementById('root')
+const mountNode=document.getElementById('root')
 
-ReactDOM.render(<App/>,root);
+render(<App/>,mountNode);
