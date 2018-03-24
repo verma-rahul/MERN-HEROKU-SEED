@@ -15,7 +15,7 @@ A Project in NodeJs with Express in server Side, MongoDb as Database which serve
   - `npm run heroku-postbuild`: It will install alll client side dependencies and build the process Initally
   - `npm start`: We get the Node Server up an running
 ### To Run Client locally cd to 'react-ui' :
-  - `npm install' : To install client side dependencies
+  - `npm install` : To install client side dependencies
   - `npm build`: To build and host through node server
   - `npm start`: To Run without building (proxy has to be setup in this case)
 
